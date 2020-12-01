@@ -13,6 +13,17 @@ let form = d3.select("#form");
 // Get a reference to the table body
 let tbody = d3.select("tbody");
 
+tableData.forEach((UFOs) => {
+    // console.log(UFOs);
+    let row = tbody.append("tr");
+
+    Object.entries(UFOs).forEach(([key, value]) => {
+        // console.log(key, value);
+        let cell = row.append("td");
+        cell.text(value);
+    });
+});
+
 // Create event handlers 
 button.on("click", runEnter);
 form.on("submit", runEnter);
@@ -49,7 +60,8 @@ function runEnter() {
         tbody.text(`No such UFO sightings exist`)
     }
 
-    else filteredData.forEach((UFOs) => {
+    else {
+        filteredData.forEach((UFOs) => {
             // console.log(UFOs);
             let row = tbody.append("tr");
             Object.entries(UFOs).forEach(([key, value]) => {
@@ -58,5 +70,5 @@ function runEnter() {
                 cell.text(value);
             });
         });
-    
-}
+    };
+};

@@ -16,6 +16,8 @@ I used JavaScript, HTML, and CSS, and D3.js to create a HTML web page with a dyn
 
 * Used a date form in my HTML document and wrote JavaScript code that listens for events and searches through the `date/time` column to find rows that match user input.
 
+![](Images/ufosite1.gif)
+
 ### UFO Level 2: Multiple Search Categories (Work in progress)
 
 * Using multiple `input` tags, I am writing JavaScript code so the user can set multiple filters and search for UFO sightings using the following criteria based on the table columns:
